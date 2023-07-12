@@ -16,7 +16,7 @@ def modify__file(file_name, content, overwrite=False):
     file.close()
 
 
-def read_file(file_name, mode='r'):
+def read_file(file_name, mode="r"):
     """Read file´s content and returns content"""
     file = open(file_name, mode)
     output_file = file.read()
