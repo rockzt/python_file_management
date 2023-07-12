@@ -3,9 +3,8 @@ def create_file(file_name, content=None):
     mode = "w" if content else "x"
     file = open(file_name, mode)
     if content:
-       file.write(content)
+        file.write(content)
     file.close()
-
 
 
 def modify__file(file_name, content, overwrite=False):
@@ -15,7 +14,6 @@ def modify__file(file_name, content, overwrite=False):
     file = open(file_name, mode)
     file.write(" " + content)
     file.close()
-
 
 
 def read_file(file_name, mode='r'):
